@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity implements ComicDetailUpdate
 
     @Override
     public void updateComicDetailView(MarvelResponse marvelResponse) {
-        Log.d("Jose", "updateComicDetailView: " + new Gson().toJson(marvelResponse));
         closeLoadingDialog();
         ComicDetailViewFragment comicDetailViewFragment = ComicDetailViewFragment.newInstance(marvelResponse);
         FragmentManager fragmentManager = getSupportFragmentManager();
