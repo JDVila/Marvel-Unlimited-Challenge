@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fragmentPadding">16dp</dimen>
+    <dimen name="imagePadding">8dp</dimen>
+    <dimen name="matchConstraints">0dp</dimen>
+    <dimen name="textBodyLineSpacing">4dp</dimen>
+    <dimen name="textHeading">26sp</dimen>
+    <dimen name="textSubheading">22sp</dimen>
+    <dimen name="textBody">18sp</dimen>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Marvel Unlimited Mark01</string>
+    <string name="publishedHeading">Published:</string>
+    <string name="writerHeading">Writer:</string>
+    <string name="pencillerHeading">Penciller:</string>
+    <string name="coverArtistHeading">Cover Artist:</string>
+    <string name="comicBookId">ComicBookId</string>
+    <string name="networkErrorDialogTitle">Error</string>
+    <string name="networkErrorDialogMessage">"Unable to Load - Please close app and retry later."</string>
+    <string name="quit">QUIT</string>
+</resources>

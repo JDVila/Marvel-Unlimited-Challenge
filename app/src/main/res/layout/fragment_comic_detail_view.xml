@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.ComicDetailViewFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2E2E2E">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/fragmentPadding">
+
+            <TextView
+                android:id="@+id/comicTitleTextView"
+                android:layout_width="@dimen/matchConstraints"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/fragmentPadding"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textHeading"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/coverImageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/coverImageView"
+                android:layout_width="@dimen/matchConstraints"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/fragmentPadding"
+                app:layout_constraintBottom_toTopOf="@id/comicDescriptionValueTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/comicTitleTextView" />
+
+            <TextView
+                android:id="@+id/comicPublishedTextView"
+                android:layout_width="@dimen/matchConstraints"
+                android:layout_height="wrap_content"
+                android:text="@string/publishedHeading"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSubheading"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/comicPublishedValueTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/coverImageView"
+                app:layout_constraintTop_toBottomOf="@+id/comicTitleTextView" />
+
+            <TextView
+                android:id="@+id/comicPublishedValueTextView"
+                android:layout_width="@dimen/matchConstraints"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textBody"
+                app:layout_constraintBottom_toTopOf="@+id/comicWriterTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/coverImageView"
+                app:layout_constraintTop_toBottomOf="@+id/comicPublishedTextView" />
+
+            <TextView
+                android:id="@+id/comicWriterTextView"
+                android:layout_width="@dimen/matchConstraints"
+                android:layout_height="wrap_content"
+                android:text="@string/writerHeading"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSubheading"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/comicWriterValueTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/coverImageView"
+                app:layout_constraintTop_toBottomOf="@+id/comicPublishedValueTextView" />
+
+            <TextView
+                android:id="@+id/comicWriterValueTextView"
+                android:layout_width="@dimen/matchConstraints"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textBody"
+                app:layout_constraintBottom_toTopOf="@+id/comicPencillerTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/coverImageView"
+                app:layout_constraintTop_toBottomOf="@+id/comicWriterTextView" />
+
+            <TextView
+                android:id="@+id/comicPencillerTextView"
+                android:layout_width="@dimen/matchConstraints"
+                android:layout_height="wrap_content"
+                android:text="@string/pencillerHeading"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSubheading"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/comicPencillerValueTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/coverImageView"
+                app:layout_constraintTop_toBottomOf="@+id/comicWriterValueTextView" />
+
+            <TextView
+                android:id="@+id/comicPencillerValueTextView"
+                android:layout_width="@dimen/matchConstraints"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textBody"
+                app:layout_constraintBottom_toTopOf="@+id/comicCoverArtistTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/coverImageView"
+                app:layout_constraintTop_toBottomOf="@+id/comicPencillerTextView" />
+
+            <TextView
+                android:id="@+id/comicCoverArtistTextView"
+                android:layout_width="@dimen/matchConstraints"
+                android:layout_height="wrap_content"
+                android:text="@string/coverArtistHeading"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSubheading"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/comicCoverArtistValueTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/coverImageView"
+                app:layout_constraintTop_toBottomOf="@+id/comicPencillerValueTextView" />
+
+            <TextView
+                android:id="@+id/comicCoverArtistValueTextView"
+                android:layout_width="@dimen/matchConstraints"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textBody"
+                app:layout_constraintBottom_toTopOf="@+id/comicDescriptionValueTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/coverImageView"
+                app:layout_constraintTop_toBottomOf="@+id/comicCoverArtistTextView" />
+
+            <TextView
+                android:id="@+id/comicDescriptionValueTextView"
+                android:layout_width="@dimen/matchConstraints"
+                android:layout_height="wrap_content"
+                android:gravity="start|top"
+                android:paddingTop="@dimen/fragmentPadding"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textBody"
+                android:lineSpacingExtra="@dimen/textBodyLineSpacing"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/coverImageView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
